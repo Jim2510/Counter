@@ -1,25 +1,28 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Orbitron", sans-serif;
 }
 
 .container {
   width: 100%;
   min-height: 100vh;
-  background-color: rgb(52, 224, 52);
+  background-color: rgb(98, 189, 98);
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .counter {
   height: 500px;
-  width: 500px;
+  max-width: 500px;
   padding: 20px;
   border-radius: 20px;
   display: flex;
@@ -27,39 +30,43 @@ body {
   align-items: center;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.432);
+  border: 5px solid rgba(17, 17, 17, 0.5215686275);
 }
 
 .display {
   min-width: 200px;
   width: -moz-fit-content;
   width: fit-content;
-  background-color: rgba(0, 0, 0, 0.808);
+  background-color: rgb(0, 0, 0);
   color: #fff;
   font-size: 3rem;
   text-align: center;
   padding: 1rem;
   margin: 2rem;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  border: 1px solid white;
 }
 
 .btns {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* divide lo spazio in due colonne di larghezza uguale */
-  grid-gap: 10px; /* aggiunge uno spazio di 10px tra i bottoni */
+  grid-template-columns: repeat(2, 1fr);
 }
 .btns button {
   width: 100%;
   font-size: 1.2rem;
   padding: 0.5rem;
-  border-radius: 5px;
-  border: none;
-  background-color: #e2bfbf;
-  color: rgb(0, 0, 0);
+  border: 1px solid white;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
   cursor: pointer;
 }
-.btns button:hover {
-  background-color: rgba(0, 0, 0, 0.438);
-  color: #fff;
+.btns button:active {
+  background-color: #2b2b2b;
+  color: #ffffff;
 }
 
 .btn {
@@ -71,21 +78,30 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 20px;
+  padding-top: 80px;
 }
 .imp input {
   text-align: center;
   height: 2rem;
-  font-size: 1.2rem;
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 5px;
+  background: black;
+  color: white;
+  border: none;
+  font-family: "Orbitron", sans-serif;
+  transition: 0.5s;
+}
+.imp input:hover {
+  border: solid 2px black;
+  transition: all 0.1s ease;
+}
+.imp input:active {
+  border: solid 2px black;
 }
 .imp button {
   margin-top: 20px;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
-  background-color: #e2bfbf;
-  padding: 14px;
-  font-size: 1.2rem;
 }
 .imp button:hover {
   background-color: rgba(0, 0, 0, 0.438);
