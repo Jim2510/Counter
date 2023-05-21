@@ -105,4 +105,9 @@ body {
 }
 .imp button:hover {
   background-color: rgba(0, 0, 0, 0.438);
+}
+
+p a {
+  text-decoration: none;
+  color: black;
 }/*# sourceMappingURL=style.css.map */
