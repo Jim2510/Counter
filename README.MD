@@ -8,7 +8,6 @@
 <h3 align="center">Progetto Counter JavaScript di Gianmarco Guglielmino</h3>
 
   <p align="center">
-    project_description
     <br />
     <a href="https://github.com/Jim2510/Counter"><strong>Explore the docs »</strong></a>
     <br />
@@ -53,7 +52,7 @@
 
 <br>
 
-Questo Counter è una semplice applicazione web che ti permette di incrementare o decrementare un valore numerico tramite pulsanti. Puoi specificare un valore da aggiungere o rimuovere e il contatore verrà aggiornato di conseguenza. Il valore massimo raggiungibile è 9999.
+Questo progetto rappresenta una semplice applicazione web che permette di incrementare o decrementare un valore numerico tramite pulsanti. E' possibile specificare un valore da aggiungere o rimuovere e il contatore verrà aggiornato di conseguenza. Il valore massimo raggiungibile è 9999 mentre il valore minimo è 0.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
