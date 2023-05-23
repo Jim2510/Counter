@@ -54,19 +54,21 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
-    button {
-        width: 100%;
-        font-size: 1.2rem;
-        padding: 0.5rem;
-        border: 1px solid white;
-        background-color: #000000;
-        color: rgb(255, 255, 255);
-        cursor: pointer;
 
-        &:active {
-            background-color: #2b2b2b;
-            color: #ffffff;
-        }
+}
+
+button {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border: 1px solid white;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+
+    &:active {
+        background-color: #2b2b2b;
+        color: #ffffff;
     }
 }
 
@@ -111,6 +113,13 @@ body {
     button:hover {
         background-color: rgba(0, 0, 0, 0.438);
     }
+}
+
+.reset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 p a {

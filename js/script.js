@@ -4,6 +4,7 @@ const decrementBtn = document.getElementById("decrement");
 const inputNumber = document.getElementById('value');
 const addButton = document.getElementById('addValue');
 const remButton = document.getElementById('remValue');
+const resetBtn = document.getElementById('reset');
 let counter = 0000;
 
 // Event listener per il pulsante di incremento
@@ -29,6 +30,12 @@ decrementBtn.addEventListener("click", (event) => {
     }
 });
 
+
+// Event listener per il pulsante che permette il reset del counter
+resetBtn.addEventListener("click", () => {
+    counter = 0;
+    count.textContent = counter.toString().padStart(4, '0');
+  });
 
 // Event listener per il pulsante di aggiunta
 addButton.addEventListener('click', () => {
