@@ -57,6 +57,7 @@ Questo progetto rappresenta una semplice applicazione web che permette di increm
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Features
+* Creazione e Visualizzazione dei pulsante +, -, add, rem e reset
 * Incrementa il contatore di uno alla volta premendo il pulsante "+".
 * Decrementa il contatore di uno alla volta premendo il pulsante "-".
 * Puoi specificare un valore da aggiungere o rimuovere utilizzando l'input numerico.
