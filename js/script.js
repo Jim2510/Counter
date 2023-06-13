@@ -5,36 +5,37 @@ const btns = document.getElementById('btns');
 const otherBtn = document.getElementById('otherBtn');
 let counter = 0;
 
+
+// Funzione che crea l'elemento, gli attribuisce tagName, classe, id e testo.
+function createElement(tagName, className, innerHTML, id) {
+    const element = document.createElement(tagName);
+    element.className = className;
+    element.innerHTML = innerHTML;
+    element.id = id;
+    return element;
+}
+
+// Funzione che crea i pulsanti che vengono mostrati all'interno del counter
 function displayBtn() {
-    const minus = document.createElement('button');
-    minus.innerHTML = '-';
-    minus.id = 'decrement';
-    minus.className = 'btn';
+
+    const minus = createElement('button', 'btn', '-', 'decrement');
     btns.appendChild(minus);
 
-    const plus = document.createElement('button');
-    plus.innerHTML = '+';
-    plus.id = 'increment';
-    plus.className = 'btn';
+    const plus = createElement('button', 'btn', '+', 'increment');
     btns.appendChild(plus);
 
-    const decBtn = document.createElement('button');
-    decBtn.innerHTML = 'REM';
-    decBtn.className = 'btn';
-    decBtn.id = 'remValue';
+
+    const decBtn = createElement('button', 'btn', 'REM', 'remValue');
     otherBtn.appendChild(decBtn);
 
-    const incBtn = document.createElement('button');
-    incBtn.innerHTML = 'ADD';
-    incBtn.className = 'btn';
-    incBtn.id = 'addValue';
+    const incBtn = createElement('button', 'btn', 'ADD', 'addValue');
     otherBtn.appendChild(incBtn);
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     displayBtn();
 
-    // Event Delegation per i pulsanti di incremento, decremento, aggiunta e rimozione, reset e input di aggiunta
+// Event Delegation per i pulsanti di incremento, decremento, aggiunta e rimozione, reset e input di aggiunta
     document.addEventListener("click", (event) => {
         const target = event.target;
 
@@ -68,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function() {
         count.textContent = counter.toString().padStart(4, '0');
     });
 
-    // Event listener per l'input del pulsante di aggiunta con gestione del valore non numerico
+// Event listener per l'input del pulsante di aggiunta con gestione del valore non numerico
     inputNumber.addEventListener('input', () => {
         if (isNaN(parseInt(inputNumber.value))) {
             count.textContent = "0000";
